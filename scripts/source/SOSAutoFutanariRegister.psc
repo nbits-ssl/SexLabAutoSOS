@@ -64,7 +64,7 @@ EndFunction
 Function equipCover(Actor act)
 	if !(act)
 		return
-	elseif (act.IsEquipped(SOSAutoFutanariStrapCover))
+	elseif (act.IsInFaction(SOSAFTypeFaction))
 		self.removeSOS(act)
 	endif
 EndFunction
